@@ -1,0 +1,15 @@
+Run this command to test your OS:
+
+qemu-system-aarch64 -M virt -cpu cortex-a57 -kernel kernel.elf -nographic
+
+Look for the debug output to see where it hangs.
+
+The issue is likely in one of these functions:
+- find_file() or find_free_slot()
+- strncpy()
+- malloc()
+- strcpy()
+
+Based on the debug output we got earlier, it was hanging after "[FS_DEBUG] strlen completed"
+
+Try running it and note exactly which debug message is the LAST one printed.

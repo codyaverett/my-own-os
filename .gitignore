@@ -1,0 +1,31 @@
+# Build artifacts
+*.o
+*.elf
+*.bin
+*.img
+*.iso
+
+# OS kernel image
+kernel.elf
+kernel.bin
+
+# Debug files
+*.map
+*.lst
+*.dump
+
+# Editor files
+*.swp
+*.swo
+*~
+.DS_Store
+
+# IDE directories
+.vscode/
+.idea/
+
+# Build directory
+build/
+
+# QEMU logs
+qemu.log
