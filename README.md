@@ -72,7 +72,8 @@ my-own-os/
 ├── docs/                  # Documentation
 │   ├── ARCHITECTURE.md    # System design
 │   ├── BUILD.md           # Build guide
-│   └── COMMANDS.md        # Command reference
+│   ├── COMMANDS.md        # Command reference
+│   └── ROADMAP.md         # Future features & development plan
 ├── src/
 │   ├── boot/
 │   │   └── boot.S         # ARM64 bootloader
@@ -96,6 +97,17 @@ This OS is designed for educational purposes. Each source file contains detailed
 - How to extend the functionality
 
 See `docs/ARCHITECTURE.md` for system design details.
+
+## Future Features
+
+This OS is under active development with ambitious goals:
+
+- **Networking**: TCP/IP stack, HTTP client, curl-like file transfer
+- **Graphics**: Framebuffer support, X Server implementation
+- **Persistent Storage**: Disk I/O and file system
+- **Multitasking**: Process management and scheduling
+
+See `docs/ROADMAP.md` for detailed plans and implementation guides.
 
 ## Learning Resources
 
